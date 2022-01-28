@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>SINGAPORE ZOO</title>
+<body style="background-color:darkolivegreen;">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {box-sizing: border-box;}
+body {font-family: papyrus;}
+.mySlides {display: none;}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Caption text */
+.text {
+  color: white;
+  font-size: 30px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 25px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: sienna;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 3s;
+  animation-name: fade;
+  animation-duration: 3s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}
+
+.container {
+  position: relative;
+  text-align: center;
+  color: white;
+
+}
+.boxes{
+width:50%;
+float:left;
+}
+#maindiv{
+         width:50%;
+margin:auto;
+      }
+      img{
+		max-width:100%;
+	}
+
+* {
+  box-sizing: border-box;
+}
+
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 5px;
+}
+/* Clearfix (clear floats) */
+ .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+table {
+  font-family: courier;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+th:nth-child(even),td:nth-child(even) {
+  background-color: ivory;
+
+}
+th:nth-child(odd),td:nth-child(odd) {
+  background-color: lemonchiffon;
+
+}
+</style>
+</head>
+<body>
+<a name="top"></a>
+
+<h1 style="color:bisque
+; text-align:center; font-size: 63px; font-family: papyrus;">SINGAPORE ZOO</h1>
+<p style="text-align:center; font-size: 20px; font-family:courier;"> 
+	<b>Immerse yourself in a wildlife adventure like no other!</b> 
+	<br> 
+	World's best rainforest zoo and home to more than 2,400 specimens of over 300 species 
+</p>
+
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+  <div class="numbertext">1 / 3</div>
+  <img src="tiger.jpeg" style="width:100%">
+  <div class="text">Celebrate the year of the Tiger at Singapore Zoo!</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">2 / 3</div>
+  <img src="giraffe.jpeg" style="width:100%">
+  <div class="text">Immerse yourself in an adventure like no other</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">3 / 3</div>
+  <img src="lion.jpeg" style="width:100%">
+  <div class="text">A Wild World Awaits You</div>
+</div>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+</div>
+
+<script>
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}    
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 2000); // Change image every 3 seconds
+}
+</script>
+
+
+<br>
+<h1 style="text-align:center; font-size: 40px; font-family: papyrus; color: darkolivegreen; background-color: lavender">
+	Table of Content</h1>
+<p style="font-size: 20px; font-family:courier;"><a href="#C1">About Singapore Zoo</a></p>
+<p style="font-size: 20px; font-family:courier;"><a href="#C2">Getting There</a></p>
+<p style="font-size: 20px; font-family:courier;"><a href="#C3">Animal Zones</a></p>
+<p style="font-size: 20px; font-family:courier;"><a href="#C4">Animal Shows</a></p>
+<p style="font-size: 20px; font-family:courier;"><a href="#C5">Map of Singapore Zoo</a></h1>
+
+<h1 id="C1">
+<p style= "text-align: center; font-size: 40px; font-family: papyrus; color: darkolivegreen; background-color: lemonchiffon">
+	About Singapore Zoo 
+</p></h1>
+<p style="text-align:center; font-size: 20px; font-family:courier;">
+	Opened in 1973, Singapore Zoo is located at Mandai Wildlife Reserve spanning 26 hectares. Singapore Zoo is dedicated to national and regional conservation projects and is one of the country's designated centres for rescued wildlife.</p>
+<br>
+<br>
+<a href="#top">Back to top</a>
+<br>
+<h2 id="C2">
+<h2 style= "text-align: center; font-size: 40px; font-family: papyrus; color: darkolivegreen; background-color: lemonchiffon">
+	Getting There: 
+</h2>
+<table>
+  <tr>
+    <td>Public Transport</td>
+    <td><b>Khatib, NS14</b>: Mandai Khatib Shuttle<br> <b>Choa Chu Kang, NS4</b>: bus 927<br> <b>Ang Mo Kio, NS16</b>: bus 138<br> <b>Woodlands, NS9</b>: 926 <br><b>Marsiling, NS8</b>: 926</td>
+  </tr>
+  <tr>
+    <td>Mandai Khatib Shuttle</td>
+    <td><b>From Khatib</b>:<br> First Bus: 8am <br> <b>From Singapore Zoo Coach Bay</b> Last Bus: 11pm</td>
+  </tr>
+  <tr>
+    <td>Mandai Express</td>
+    <td>From <b>Bedok</b>, <b>Seng Kang</b> and <b>Tampines</b></td>
+  </tr>
+  <tr>
+    <td>Driving & Taxi</td>
+    <td>Via <b>Central Expressway (CTE)</b> from the City <br> Via <b> Pan Island Expressway (PIE)</b> from the City <br> Click on <b>map</b> to plan your route</td>
+  </tr>
+</table>
+
+<a href="https://www.google.com/maps/dir//80+Mandai+Lake+Rd,+Singapore+729826/@1.404904,103.7896448,15.99z/data=!4m9!4m8!1m0!1m5!1m1!1s0x31da13d911015871:0xc580198420869ad5!2m2!1d103.7854039!2d1.4030802!3e0?hl=en-US">
+<img src="googlemap.jpeg" alt="google map" style="width:70%;">
+</a>
+ <b> Click <a href="https://www.mandai.com/en/singapore-zoo/plan-your-visit/getting-here.html"> here</a> 
+	to find out more!
+	</b>
+<br>
+<br>
+<a href="#top">Back to top</a>
+
+<hr>
+<h3 id="C3">
+<h3 style="text-align:center; font-size: 40px; font-family: papyrus; color: darkolivegreen; background-color: lightpink;"> 
+Animal Zones
+</h3>
+
+<li style="font-size: 25px; color: salmon; font-family: garamond;"> Wild Africa </li>
+<p style="font-family: courier;"> Enjoy the sights of the largest, tallest and fastest animals on land at 
+    <b> Wild Africa! </b> 
+	
+	<br> Get the opportunity to enjoy encounters with wildlife:
+	<b> Giraffe and White Rhino Feeding </b> 
+	for an up-close exciting experience! <br> 
+	For rates and timings, click <a href="https://www.mandai.com/en/singapore-zoo/animals-and-zones/wild-africa.html">here</a>. 
+</p>
+<br>
+
+<div id="mainDiv">
+  <div id="divOne" class="boxes">
+    <img src="cheetah.jpeg">
+  </div>
+  <div id="divTwo" class="boxes">
+    <img src="zebra.jpeg">
+ </div>
+</div>
+<div class="container">
+  <img src="rhino.jpeg" alt="Rhino" style="width:30%;">
+</div>
+
+<br>
+<br>
+
+<li style="font-size: 25px; color: salmon; font-family: garamond;"> Fragile Forest </li>
+<p style="font-family: courier;"> At this 20,000 cubic metre biodome that mimics a tropical rainforest, we have: <br> 
+	<br> 
+	<b> - Black-and-white ruffed lemur </b> 
+	<br> 
+	<b> - Toco toucan </b> <br> 
+	<b> - Tree nymph butterfly </b> <br> 
+        <b> - Golden lion tamarin </b> <br>
+	<br> ... and many more! 
+</p>
+
+<div class="row">
+  <div class="column">
+    <img src="toucan.jpeg" alt="Toco Toucan" style="width:100%">
+  </div>
+  <div class="column">
+    <img src="iguana.jpeg" alt="Green Iguana" style="width:100%">
+  </div>
+  <div class="column">
+    <img src="butterfly.jpeg" alt="Tree Lymph Butterfly" style="width:100%">
+  </div>
+</div>
+<br>
+
+<li style="font-size: 25px; color: salmon; font-family: garamond;"> Great Rift Valley of Ethiopia </li>
+<p style="font-family: courier;">Home to the <b> Hamadryas baboons </b> and <b> Nubian ibexes </b>, explore further and discover many more animals along with the recreated Konso and Amharic villages!
+</p>
+
+<div class="container">
+  <img src="baboon.jpeg" alt="Baboon" style="width:30%;">
+</div>
+<br>
+<br>
+<a href="#top">Back to top</a>
+
+<hr>
+<h4 id="C4">
+<h4 style="text-align: center; font-size: 40px; color: darkolivegreen; font-family: papyrus; background-color: lightsalmon;"> 
+	Animal Shows
+</h4>
+<p style="text-align:center; font-size: 20px; font-family:courier;"> 
+	Catch the various shows available to witness the amazing talents and stunts of the animals alongside their trainers!
+	<br> 
+	Each show lasts 15 to 20 minutes and weather permitting!
+
+
+<p style="font-family: garamond; font-size: 25px; text-align: center; color: lightcyan;"> 
+	<b> Splash Safari </b> 
+</p>
+
+<p style="font-size: 17px; text-align: center; font-family:courier;"> 
+	Show Hours: 10:30am & 5pm <br>
+        Location: Shaw Foundation Amphitheatre <br>
+<b> Click <a href="https://oas3.relsystems.net:92/RELGetQueue.aspx?brCode=NHDUJR#!"> here</a> 
+	to book seats
+	</b>
+</p>
+
+<div class="container">
+  <img src="splashsafari.jpeg" alt="Splash Safari" style="width:40%;">
+</div>
+
+<p style="font-family: garamond;font-size: 25px; text-align: center; color: lightcyan;"> 
+	<b>Animal Friends</b> 
+</p>
+
+<p style="font-size: 17px; text-align: center; font-family:courier;"> 
+	Show Hours: 1:30pm & 4pm
+        Location: Rainforest Kidzworld Amphitheatre <br>
+<b> Click <a href="https://oas3.relsystems.net:92/RELGetQueue.aspx?brCode=JKLTPU#!"> here</a> 
+	to book seats
+	</b>
+</p>
+<div class="container">
+  <img src="animalfriends.jpeg" alt="Animal Friends" style="width:50%;">
+</div>
+
+<p style="font-family: garamond; font-size: 25px; text-align: center; color: lightcyan;"> 
+	<b>Rainforest Fights Back</b> 
+</p>
+<p style="font-size: 17px; text-align: center; font-family:courier;"> 
+	Show Hours: 12pm & 2:30pm
+        Location: Shaw Foundation Amphitheatre <br>
+<b> Click <a href="https://oas3.relsystems.net:92/RELGetQueue.aspx?brCode=NHDUJR#!"> here</a> 
+	to book seats
+	</b>
+</p>
+<div class="container">
+  <img src="rainforestshow.jpeg" alt="Rainforest Fights Back" style="width:35%;">
+</div>
+
+<p style="font-family: garamond; font-size: 25px; text-align: center; color: lightcyan;"> 
+	<b>Elephant Presentation</b> 
+</p>
+<p style="font-size: 17px; text-align: center; font-family:courier;"> 
+        Location: Elephants of Asia<br>
+</p>
+<div class="container">
+  <img src="elephantshow.jpeg" alt="Elephant Show" style="width:50%;">
+</div>
+<br>
+<br>
+<a href="#top">Back to top</a>
+
+<hr>
+<h5 id="C5">
+<h5 style="text-align:center; font-size: 40px; font-family: papyrus; color: darkolivegreen; background-color: mistyrose;">
+	Map of Singapore Zoo
+</h5>
+
+<div class="container">
+  <img src="zoomap.jpeg" alt="Singapore Zoo Map" style="width:100%;">
+</div>
+<br>
+<br>
+<a href="#top">Back to top</a>
+
+
+</body>
+</html>
